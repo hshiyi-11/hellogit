@@ -2,6 +2,8 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
+
+
     <ul>
       <li>
         <a
@@ -71,15 +73,9 @@
           vue-loader
         </a>
       </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
+      
     </ul>
+	<button onclick="checkAdult()">点我</button>
   </div>
 </template>
 
@@ -88,9 +84,30 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+	  ages: [
+	  	  {	name:uu6456454,
+	  		age:555456,
+	  		sex:dddf,
+	  		},
+	  		{
+	  		name:tt6456454,
+	  		age:55gg5456,
+	  		sex:dddf},
+	  		{name:uu6456454,
+	  		age:55hh5456,
+	  		sex:dddf},
+	  		{name:hh6456454,
+	  		age:5sah456,
+	  		sex:dddf}
+	  	  ];
     }
   }
+
+}
+function checkAdult() {
+   if(ages.name.indexOf("uu")>0){
+	    alert("uu存在");
 }
 </script>
 
